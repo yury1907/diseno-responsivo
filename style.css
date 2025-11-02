@@ -1,0 +1,74 @@
+/* Estilos generales (para móviles - Mobile First) */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: lightblue; /* color base */
+  transition: background-color 0.5s;
+  padding: 20px;
+}
+
+h1 {
+  color: #222;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.galeria img {
+  width: 90%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Texto */
+.texto {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+/* Tablet (más de 768px) */
+@media (min-width: 768px) {
+  body {
+    background-color: lightcoral; /* cambia el fondo */
+  }
+
+  .galeria {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .galeria img {
+    width: 30%;
+  }
+}
+
+/* Escritorio (más de 1200px) */
+@media (min-width: 1200px) {
+  body {
+    background-color: lightgreen; /* cambia el fondo */
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .texto {
+    font-size: 1.4em;
+  }
+}
+.galeria {
+  display: flex;
+  flex-direction: column; /* Esto las pone una debajo de otra */
+  align-items: center;    /* Centra las imágenes */
+  gap: 10px;              /* Espacio entre ellas */
+}
+
+.galeria img {
+  width: 300px;
+  border-radius: 10px;
+}
